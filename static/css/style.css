@@ -1,0 +1,30 @@
+:root {
+    --azul: #0a58ca;
+    --branco: #f8f9fa;
+}
+
+
+header {
+    align-items: center;
+    background-color: var(--azul);
+    display: flex;
+    height: 66px;
+}
+
+
+.titulo {
+    align-items: center;
+    color: var(--branco);
+    display: flex;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+main {
+    background-color: var(--branco);
+    min-height: calc(100vh - 66px);
+}
