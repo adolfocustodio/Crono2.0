@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block main %}
+<form enctype="multipart/form-data" method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label class="form-label">Título</label>
+        {{ form.titulo }}
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Categoria</label>
+        {{ form.categoria }}
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Descrição</label>
+        {{ form.desc }}
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Arquivo</label>
+        {{ form.arquivo }}
+    </div>
+    <hr class="mb-3">
+    <button class="btn_azul" type="submit">Enviar</button>
+</form>
+{% endblock main %}

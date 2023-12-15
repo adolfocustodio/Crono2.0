@@ -85,6 +85,26 @@ main {
 }
 
 
+.postagem {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+}
+
+
+.postagem_titulo {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.postagem_download {
+    display: flex;
+    justify-content: right;
+}
+
+
+
 /* Estilização dos formulários */
 
 

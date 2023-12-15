@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block sidebar %}
+{% include 'adm_sidebar.html' %}
+{% endblock sidebar %}
+{% block main %}
+<div>
+    <div class="card text-bg-secondary m-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Total de Usuarios</h5>
+            <p class="card-text">{{ usuarios }}</p>
+        </div>
+    </div>
+    <div class="card text-bg-secondary m-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Total de Postagens</h5>
+            <p class="card-text">{{ postagens }}</p>
+        </div>
+    </div>
+    <div class="card text-bg-secondary m-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Total de Categorias</h5>
+            <p class="card-text">{{ categorias }}</p>
+        </div>
+    </div>
+</div>
+{% endblock main %}
+    
