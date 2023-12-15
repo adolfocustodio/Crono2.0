@@ -53,6 +53,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'crono.wsgi.application'
 
+AUTH_USER_MODEL = 'usuarios.Usuario'
+
+LOGIN_REDIRECT_URL = 'core:home'
+
+LOGOUT_REDIRECT_URL = 'core:home'
+
 
 DATABASES = {
     'default': {

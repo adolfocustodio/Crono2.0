@@ -1,0 +1,18 @@
+<div class="modal fade" id="deleteModal">
+    <form action="{% url 'usuarios:usuario_excluir' usuario.pk %}" class="modal-dialog modal-dialog-centered" method="post">
+        {% csrf_token %}
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Excluir usuário</h1>
+                <button class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                Tem certeza que deseja excluir esse usuário?
+            </div>
+            <div class="modal-footer">
+                <button class="btn_cinza" data-bs-dismiss="modal" type="button">Cancelar</button>
+                <button class="btn_vermelho" type="submit">Excluir</button>
+            </div>
+        </div>
+    </form>
+</div>

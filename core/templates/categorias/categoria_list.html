@@ -1,6 +1,6 @@
-{% extends "base.html" %}
+{% extends "base_adm.html" %}
 {% block main %}
-<div class="conteudo">
+<div style="width: 100%;">
     <table class="table">
         <thead>
             <tr>
@@ -19,13 +19,19 @@
                     <a data-bs-toggle="modal" href="#deleteModal">
                         <svg fill="currentColor" height="16" viewBox="0 0 16 16" width="16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg>
                     </a>
-                    {% include 'core/categoria_confirm_delete.html' %}
+                    {% include 'categorias/categoria_confirm_delete.html' %}
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="2">
+                    <p class="d-flex justify-content-center mb-0">Não existem categorias cadastradas</p>
                 </td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
-    <div class="table_btn">
+    <div class="d-flex justify-content-end">
         <a href="{% url 'core:categoria_form' %}"><button class="btn_azul">Novo</button></a>
     </div>
 </div>

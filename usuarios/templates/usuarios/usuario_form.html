@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block main %}
+<div>
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label class="form-label">Nome</label>
+            {{ form.nome }}
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Nome de usuário</label>
+            {{ form.username }}
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            {{ form.email }}
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Senha</label>
+            {{ form.password1 }}
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Confirme sua senha</label>
+            {{ form.password2 }}
+        </div>
+        <hr class="mb-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn_azul" type="submit">Criar</button>
+        </div>
+    </form>
+</div>
+{% endblock main %}

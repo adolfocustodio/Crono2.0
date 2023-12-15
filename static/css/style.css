@@ -18,6 +18,11 @@ a {
 }
 
 
+hr {
+    color: var(--azul);
+}
+
+
 /* Estilização do cabeçalho */
 
 
@@ -36,11 +41,29 @@ header {
 }
 
 
-/* Estilização do conteudo principal */
+/* Estilização da barra lateral */
 
 
-form {
-    width: 750px;
+nav {
+    display: flex;
+    height: calc(100% - 60px);
+    top: 60px;
+    width: 250px;
+}
+
+
+.sidebar {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+}
+
+
+.nav_link {
+    align-items: center;
+    display: flex;
 }
 
 
@@ -51,12 +74,28 @@ main {
     background-color: var(--branco);
     display: flex;
     justify-content: center;
+    margin-left: 250px;
+    margin-top: 66px;
     min-height: calc(100vh - 66px);
 }
 
 
-.conteudo {
-    width: 100%;
+@media (max-width: 991px) {
+    main {
+        margin-left: 0;
+    }
+    
+    .sidebar {
+        margin-top: 60px;
+    }
+}
+
+
+/* Estilização dos formulários */
+
+
+form {
+    width: 750px;
 }
 
 
@@ -65,12 +104,6 @@ main {
 
 tbody tr:hover td {
     background-color: var(--azul_claro);
-}
-
-
-.table_btn {
-    display: flex;
-    justify-content: end;
 }
 
 
