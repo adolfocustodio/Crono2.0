@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block main %}
+<div>
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label class="form-label">Nome</label>
+            {{ form.nome }}
+        </div>
+        <hr class="mb-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn_azul" type="submit">Enviar</button>
+        </div>
+    </form>
+</div>
+{% endblock main %}

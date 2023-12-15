@@ -1,7 +1,24 @@
 :root {
     --azul: #0a58ca;
+    --azul2: #094fbd;
+    --azul3: #073fba;
+    --azul_claro: rgb(207, 226, 255, 0.5);
     --branco: #f8f9fa;
+    --cinza: #6c757d;
+    --cinza2: #677377;
+    --cinza3: #626c74;
+    --vermelho: #ef233c;
+    --vermelho2: #e32139;
+    --vermelho3: #d71f36;
 }
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* Estilização do cabeçalho */
 
 
 header {
@@ -19,12 +36,97 @@ header {
 }
 
 
-a {
-    text-decoration: none;
+/* Estilização do conteudo principal */
+
+
+form {
+    width: 750px;
 }
+
+
+/* Estilização do conteudo principal */
 
 
 main {
     background-color: var(--branco);
+    display: flex;
+    justify-content: center;
     min-height: calc(100vh - 66px);
+}
+
+
+.conteudo {
+    width: 100%;
+}
+
+
+/* Estilização das tabelas */
+
+
+tbody tr:hover td {
+    background-color: var(--azul_claro);
+}
+
+
+.table_btn {
+    display: flex;
+    justify-content: end;
+}
+
+
+/* Estilização dos botões */
+
+
+button {
+    border: currentColor;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+
+.btn_azul {
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+
+.btn_azul:hover {
+    background-color: var(--azul2);
+}
+
+
+.btn_azul:active {
+    background-color: var(--azul3);
+}
+
+
+.btn_cinza {
+    background-color: var(--cinza);
+    color: var(--branco);
+}
+
+
+.btn_cinza:hover {
+    background-color: var(--cinza2);
+}
+
+
+.btn_cinza:active {
+    background-color: var(--cinza3);
+}
+
+
+.btn_vermelho {
+    background-color: var(--vermelho);
+    color: var(--branco);
+}
+
+
+.btn_vermelho:hover {
+    background-color: var(--vermelho2);
+}
+
+
+.btn_vermelho:active {
+    background-color: var(--vermelho3);
 }
