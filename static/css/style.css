@@ -46,8 +46,8 @@ header {
 
 nav {
     display: flex;
-    height: calc(100% - 60px);
-    top: 60px;
+    height: calc(100% - 66px);
+    top: 66px;
     width: 250px;
 }
 
@@ -64,6 +64,7 @@ nav {
 .nav_link {
     align-items: center;
     display: flex;
+    font-weight: 500;
 }
 
 
@@ -74,20 +75,13 @@ main {
     background-color: var(--branco);
     display: flex;
     justify-content: center;
-    margin-left: 250px;
     margin-top: 66px;
     min-height: calc(100vh - 66px);
 }
 
 
-@media (max-width: 991px) {
-    main {
-        margin-left: 0;
-    }
-    
-    .sidebar {
-        margin-top: 60px;
-    }
+:has(nav) main {
+    margin-left: 250px;
 }
 
 
